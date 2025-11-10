@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ma Boutique Express</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <h1 class="logo-text">Ma Boutique Express</h1>
+    <p class="animated-welcome">Bienvenue dans la boutique de Landry de Pierre</p>
+  </header>
+
+  <!-- TOP BAR JAUNE -->
+  <div class="top-bar">
+    <div class="tb-left">Produits : <span id="product-count">0</span></div>
+    <div class="tb-center"><span class="lp-signature">L.P Signature</span></div>
+    <div class="tb-right">
+      <input type="search" id="search-input" placeholder="Rechercher un produit…" aria-label="Recherche">
+      <select id="category-select" aria-label="Catégorie">
+        <option value="all">Toutes les catégories</option>
+      </select>
+      <button id="refresh-btn" aria-label="Rafraîchir">🔄</button>
+    </div>
+  </div>
+
+  <!-- GRILLE PRODUITS -->
+  <main>
+    <section id="productGrid" class="products-grid"></section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer-pagination">
+    <div class="socials-left">
+      <span class="social-label">Réseaux :</span>
+      <a href="https://facebook.com" target="_blank" aria-label="Facebook">📘</a>
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram">📸</a>
+      <a href="https://tiktok.com" target="_blank" aria-label="TikTok">🎵</a>
+      <a href="https://youtube.com" target="_blank" aria-label="YouTube">▶️</a>
+    </div>
+    <div class="footer-center">
+      <span class="footer-text">© 2025 Ma-boutique-Express</span>
+    </div>
+    <nav id="pagination" class="pagination"></nav>
+  </footer>
+
+  <!-- Petit logo -->
+  <div id="petit-logo">
+    <svg width="60" height="40" viewBox="0 0 100 60">
+      <rect width="100" height="60" fill="yellow" rx="10"/>
+      <text x="15" y="40" font-family="Arial" font-size="40" fill="blue" font-weight="bold">M&amp;T</text>
+      <text x="68" y="58" font-family="Arial" font-size="20" fill="blue" font-weight="bold">G</text>
+    </svg>
+  </div>
+
+  <!-- Widget cookies discret -->
+  <div id="cookie-widget" class="cookie-widget">
+    <span>🍪</span>
+    <small>Cookies Amazon</small>
+    <button id="cookie-ok" aria-label="Accepter">OK</button>
+    <button id="cookie-close" aria-label="Fermer">×</button>
+  </div>
+
+  <script src="script.js"></script>
+  <script async src="https://z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=CA"></script>
+</body>
+</html>
